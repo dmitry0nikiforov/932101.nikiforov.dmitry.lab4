@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+.header {
+    background-color: #4f75a1;
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-content: center;
+}
+
+.header__img {
+    margin-left: 15%;
+}
+
+.placeholder {
+    height:50px;
+    width: 100%;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: auto 1 1;
+    justify-content: center;
+    background-color: #edeef0;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px;
+}
+
+.navBar__item {
+    padding: 10px;
+    color: #507299;
+    transition: background-color 0.3s ease-out;
+    text-decoration: none;
+}
+
+.navBar__item:hover {
+    background-color:#e1e5eb;
+}
+
+.postsArea {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.postsArea__post {
+    max-width: 500px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(210, 210, 210);
+    color: rgb(58, 58, 58);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.postsArea__post__titleContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.postsArea__post__titleContainer__title {
+    font-weight: bold;
+}
+
+.postsArea__post__contentContainer {
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.postsArea__post__contentContainer__text {
+    word-wrap: break-word;
+}
+
+.postsArea__post__contentContainer__text::selection {
+    background: rgb(212, 212, 212);
+    color:#507299;
+}
+
+.postsArea__post__contentContainer__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.postsArea__post__divider {
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 3px;
+    background-color: rgb(192, 192, 192);
+    border:0;
+    flex-shrink: 0;
+}
+
+.topDivider {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.postsArea__post__buttonsContainer {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.postsArea__post__buttonsContainer__button {
+    padding: 5px;
+    color: #507299;
+    transition: background-color 0.3s ease-out;
+    text-decoration: none;
+
+
+}
+
+.postsArea__post__buttonsContainer__button:hover {
+    background-color:#e1e5eb;
+}
+
+.rightBarContainer {
+
+}
+
+.rightBarContainer__rightBar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.rightBarContainer__rightBar__infoBox {
+    width: 200px;
+    background-color: white;
+    border: 1px solid rgb(192, 192, 192);
+    box-shadow: 0 0 5px rgb(210, 210, 210);
+    color: rgb(58, 58, 58);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rightBarContainer__rightBar__infoBox__headerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.rightBarContainer__rightBar__infoBox__headerContainer__header {
+    font-weight: bold;
+}
+
+.rightBarContainer__rightBar__infoBox__textContainer {
+    background-color: #e1e5eb;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.rightBarPlaceholder {
+    width: 200px;
+    height: 10px;
+}
+
+.footer {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:rgb(192, 192, 192);
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .navBar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navBar__item {
+        margin-right: 20px;
+    }
+
+    .postsArea {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rightBar {
+        display: none;
+    }
+
+    .rightBarPlaceholder {
+        display: none;
+    }
+}
+
+
+
+
+
